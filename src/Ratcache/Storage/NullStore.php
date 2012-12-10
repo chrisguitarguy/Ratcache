@@ -38,6 +38,14 @@ class NullStore implements StorageInterface
     /**
      * {@inheritdoc}
      */
+    public function get($key, $default='')
+    {
+        return $default;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function add($key, $value, $ttl=3600)
     {
         return false;

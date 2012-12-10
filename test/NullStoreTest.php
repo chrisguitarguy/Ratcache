@@ -11,6 +11,12 @@ class NullStoreTest extends PHPUnit_Framework_TestCase
         $this->cache = new Ratcache();
     }
 
+    public function testGetReturnsDefault()
+    {
+        $res = $this->cache->get('foo', 'default');
+        $this->assertSame($res, 'default');
+    }
+
     public function testAddReturnsFalse()
     {
         $this->assertFalse($this->cache->add('foo', 'bar'));

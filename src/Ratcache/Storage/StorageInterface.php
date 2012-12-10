@@ -35,6 +35,18 @@ namespace Ratcache\Storage;
 interface StorageInterface
 {
     /**
+     * Get an item from the cache.
+     *
+     * @access  public
+     * @since   0.1
+     * @param   string $key The cache key
+     * @param   mixed $default (optional) The default to return if key isn't
+     *          present.
+     * @return  mixed Whatever happens to be in the cache.
+     */
+    public function get($key, $default='');
+
+    /**
      * Add a key to the cache if it doesn't already exist.
      *
      * @access  public
