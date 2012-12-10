@@ -42,7 +42,7 @@ class Ratcache
      */
     protected $store;
 
-    public function __construct(Storage\StoreInterface $s=null)
+    public function __construct(Storage\StorageInterface $s=null)
     {
         is_null($s) && $s = new Storage\NullStore();
         $this->setStorage($s);
@@ -56,7 +56,7 @@ class Ratcache
      * @param   Storage\StorageInterface $s
      * @return  void
      */
-    public function setStorage(Storage\StoreInterface $s)
+    public function setStorage(Storage\StorageInterface $s)
     {
         $this->store = $s;
     }
