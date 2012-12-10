@@ -1,0 +1,17 @@
+{
+    "name": "Ratcache",
+    "description": "A PHP caching library.",
+    "version": "0.1",
+    "keywords": ["cache"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Davis",
+            "homepage": "http://christopherdavis.me",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"Ratcache" : "src/"}
+    }
+}
