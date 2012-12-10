@@ -2,7 +2,7 @@
 <phpunit backupGlobals="false" bootstrap="vendor/autoload.php">
     <testsuites>
         <testsuite name="Ratcache Test Suite">
-            <directory>./tests/</directory>
+            <directory>./test/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
